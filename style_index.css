@@ -1,5 +1,4 @@
 /* style_index.css */
-
 body {
   background: linear-gradient(180deg,
       rgba(200, 217, 228, 1) 0%,
@@ -150,12 +149,17 @@ nav a:hover::after {
   background-repeat: no-repeat;
 }
 
+
 .subsection-bar {
   display: grid;
   grid-template-columns: 300px 1fr 300px;
   position: sticky;
-  top: 20px;
-
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 0px;
+  backdrop-filter: blur(4px); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  top: 0px;
 
 
 
@@ -175,14 +179,80 @@ nav a:hover::after {
   margin-right: 0;
 }
 
-.planning-tools-subsection {
-  margin: auto auto;
+.mission-subsection{
   border-color: #2e2e2e;
-  border-style: dashed;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 0px;
+  width: 70%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
 
 
+/*#planning-tools{
+  border-color: #2e2e2e;
+  border-style: solid;
+  border-width: 1px;
+  
+}*/
+
+.planning-tools-subsection {
+  border-color: #2e2e2e;
+  width: 70%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr
 
 }
+
+.tools-element{
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tools-element:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tools-title-logo{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 20px;
+
+}
+
+div .tools-title{
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2e2e;
+  text-align: center;
+}
+
+
+div .logo{
+  width: 100px;
+  height: 100px;
+
+}
+
+div .tools-desc{
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+  text-align: center;
+  padding: 0 20px;
+}
+
+
