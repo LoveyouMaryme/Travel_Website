@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style_form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Meow+Script&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="espace"></div>
+
+    <div class="header-bar">
+      <nav class="navigation">
+        <a href="index.html">Acceuil</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <h1 class="title">Je m'implique</h1>
+    <h2 class="subtitle">
+      Deviens bénévole et aide-nous à faire la différence.
+    </h2>
+    <div class="form-container">
+      <div></div>
+      <div class="form_and_image">
+        <form class="form">
+          <div class="fullname">
+            <div>
+              <label for="fname">Prénom:</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Love-Mary"
+              />
+            </div>
+            <div>
+              <label for="lname">Nom:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Victor"
+              />
+            </div>
+          </div>
+          <div><label for="email">Courriel:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="love-mary.victor@msn.com"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Décris comment tu souhaites t'impliquer en tant que bénévole, les compétences que tu peux apporter et tes disponibilités."
+          ></textarea>
+
+          <div style="margin: 15px 0">
+            <input type="checkbox" id="volunteer" name="volunteer" />
+            <label for="volunteer" style="font-size: 13px; font-weight: 400"
+              >En soumettant ce formulaire, vous acceptez de recevoir des
+              communications de notre part concernant les opportunités de
+              bénévolat et les mises à jour de notre organisation.</label
+            >
+          </div>
+
+          <input type="submit" value="Envoyer" />
+        </form></div>
+
+          
+        <div class="form-image"></div>
+      </div>
+
+      <div></div>
+    </div>
+  </body>
+</html>
