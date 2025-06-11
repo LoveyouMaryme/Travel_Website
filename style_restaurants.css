@@ -11,12 +11,11 @@ body {
 }
 
 section {
-   padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 40px; 
-    align-items: center;
-
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }
 
 .title {
@@ -54,7 +53,7 @@ nav a {
 }
 
 .navigation a.active {
-  color: #b96757; 
+  color: #b96757;
   font-weight: bold;
 }
 
@@ -164,4 +163,52 @@ nav a:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.container-restaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.restaurant-image{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-holder div p {
+    color:#2e2e2e;
+    font-weight: 300;
+}
+
+#plats-recommandes  {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;    
+    width: 80%;
+    display:flex;
+    flex-direction: row;
+}
+
+.panorama-nourriture{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+}
+
+.panorama-nourriture img {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plats-recommandes-description{
+    width: 70%;
+  height: 70%;
+  display: grid;
+  grid-template-rows:  1fr 1fr;
+  align-items: center;
 }
