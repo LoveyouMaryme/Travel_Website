@@ -17,7 +17,6 @@ body {
 nav a {
   text-decoration: none;
   color: #6c91bf;
-  /* desaturated sky blue */
   font-weight: 600;
   padding: 8px 16px;
   transition: all 0.4s ease;
@@ -27,7 +26,7 @@ nav a {
 }
 
 .navigation a.active {
-  color: #b96757; /* desaturated peach */
+  color: #b96757; 
   font-weight: bold;
 }
 
@@ -78,12 +77,12 @@ nav a:hover::after {
 }
 
 .cta-button:hover {
-  background-color: #7d9d85;
+  background-color: #b96757;
   color: white;
 }
 
 .cta-button:active {
-  background-color: #63816b;
+  background-color: #83493d;
   color: white;
 }
 
@@ -338,8 +337,8 @@ div .tools-desc{
 .table-container {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;;
   row-gap: 20px;
   padding: 0px;
   align-items: flex-start;
@@ -387,3 +386,4 @@ div .tools-desc{
   border-radius: 20px;
   cursor: pointer;
 }
+

@@ -1,7 +1,12 @@
 /* style_index.css */
 
 body {
-  background: linear-gradient(180deg,rgba(108, 145, 191, 1) 0%, rgba(197, 211, 227, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(200, 217, 228, 1) 0%,
+    rgba(173, 188, 168, 1) 70%,
+    rgba(240, 229, 217, 1) 100%
+  );
   margin: 0;
   font-family: "Shantell Sans", sans-serif;
   color: #2e2e2e;
@@ -12,7 +17,7 @@ body {
 
 nav a {
   text-decoration: none;
-  color: white; 
+  color: #2e2e2e; 
   font-weight: 600;
   padding: 8px 16px;
   transition: all 0.4s ease;
@@ -87,7 +92,7 @@ nav a:hover::after {
   line-height: 10px;
   color: #6b6b6b;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-style: italic;
   text-align: center;
 }
