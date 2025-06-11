@@ -127,7 +127,7 @@ nav a:hover::after {
   font-weight: 300;
   font-size: 24px;
   line-height: 10px;
-  color: #6b6b6b;
+  color: f#6b6b6b;
   margin-top: 0;
   margin-bottom: 60px;
   font-style: italic;
@@ -152,31 +152,34 @@ nav a:hover::after {
 
 .subsection-bar {
   display: grid;
+  width: 80%;
+  margin: 50px auto;
   grid-template-columns: 300px 1fr 300px;
   position: sticky;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 1);
   padding: 20px 0px;
   backdrop-filter: blur(4px); 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
   top: 0px;
-
+  border-radius: 25px;
 
 
 }
 
 .subsection-navigation {
-  border-bottom: #8f8f8f;
-  border-bottom-style: dotted;
+
   padding-bottom: 5px;
   border-bottom-width: 1px;
 
 }
 
 
-#back-top {
-  margin-left: auto;
-  margin-right: 0;
+.little-logo {
+  width: 25px;
+  height: 25px;
+  align-self: right;
+ 
 }
 
 .mission-subsection{
@@ -185,9 +188,39 @@ nav a:hover::after {
   height: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
   align-items: center;
-  justify-content: center;
+
+
+}
+
+
+.mission-title-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+}
+.mission-text{
+  font-size: 18px;
+  font-weight: 400;
+  color: #2e2e2e;
+  text-align: center;
+  padding: 20px;
+  margin: 0px 20px;
+}
+
+.mission-list{
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 50px;
+ 
+}
+
+#onomichiport-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 
@@ -198,39 +231,76 @@ nav a:hover::after {
   
 }*/
 
+#outil-planif{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: bottom;
+  justify-content: center;
+  padding: 20px;
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+
+}
+
+#outils-title{
+  padding-left: 20px;
+}
+
+
 .planning-tools-subsection {
   border-color: #2e2e2e;
-  width: 70%;
-  height: 70%;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr
-
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+  margin: 0px;
 }
 
 .tools-element{
-  border-radius: 20px;
+  border-radius: 50%;
   margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: top;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  width: 320px;
+  height: 320px;
+  background-color: #7d9d85;
+  border-width: 3px;
+  border-color: #7d9d85;
+  border-style: solid;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tools-element:hover {
+.tools-element:hover{
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  cursor: pointer;
+   color: #b96757;
+
+
+}
+
+.tools-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-top: 10px;
 }
 
 .tools-title-logo{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: center;
+  display: flex; 
+  flex-direction: column;
   align-items: center;
-  height: 100px;
-  padding: 20px;
-
+  justify-content: center;
+  height: auto;
+  padding: 10px;
 }
 
 div .tools-title{
@@ -242,17 +312,73 @@ div .tools-title{
 
 
 div .logo{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 
 }
 
 div .tools-desc{
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 400;
-  color: #2e2e2e;
+  color: rgb(238, 232, 226);
   text-align: center;
-  padding: 0 20px;
+  padding: 10px 20px;
+}
+
+.tools-element:hover .tools-desc {
+  color: #63816b; 
 }
 
 
+.table-container {
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  margin: 0 auto;
+  row-gap: 20px;
+  padding: 0px;
+  align-items: flex-start;
+}
+
+.table{
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.table th {
+  font-weight: 400; 
+  letter-spacing: 1px; 
+  text-transform: uppercase;
+  color: #b96757;
+  border-bottom: 1px dotted #b96757;
+}
+
+.table th, .table td {
+
+  padding: 20px;
+  text-align: center;
+}
+
+.table tr th {
+  border-bottom: 1px dotted #b96757;
+  color: #b96757;
+  font-weight: 600;
+
+}
+
+.table-logo{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 239, 220, 0.6); /* light peachy on hover */
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  cursor: pointer;
+}
