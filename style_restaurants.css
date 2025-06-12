@@ -30,7 +30,7 @@ section {
   font-weight: 300;
   font-size: 24px;
   line-height: 10px;
-  color: f#6b6b6b;
+  color: #6b6b6b;
   margin-top: 0;
   font-style: italic;
   text-align: center;
@@ -116,8 +116,6 @@ nav a:hover::after {
   top: 0;
   border-radius: 20px;
   display: inline-flex;
-  width: 80%;
-  align-self: right;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -165,7 +163,7 @@ nav a:hover::after {
   background-repeat: no-repeat;
 }
 
-#restaurants {
+#restaurants, #restaurants2 {
   width: 60%;
   margin: auto auto;
 }
@@ -182,6 +180,7 @@ nav a:hover::after {
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .restaurant-holder div p {
@@ -208,6 +207,19 @@ nav a:hover::after {
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.restaurant-image:hover{
+    cursor: pointer;
+    transform:scale(1.05)
+
+
+
+}
+
+h3{
+    text-align: center;
 }
 
 .plats-recommandes-description {
@@ -218,6 +230,3 @@ nav a:hover::after {
   align-items: center;
 }
 
-h3{
-    text-align: center;
-}

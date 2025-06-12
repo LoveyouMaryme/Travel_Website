@@ -77,12 +77,12 @@ nav a:hover::after {
 }
 
 .cta-button:hover {
-  background-color: #b96757;
+  background-color: #7d9d85;
   color: white;
 }
 
 .cta-button:active {
-  background-color: #83493d;
+  background-color: #63816b;
   color: white;
 }
 
@@ -92,7 +92,6 @@ nav a:hover::after {
   border-radius: 20px;
   display: inline-flex;
   width: 80%;
-  align-self: right;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -137,7 +136,7 @@ nav a:hover::after {
   font-weight: 300;
   font-size: 24px;
   line-height: 10px;
-  color: f#6b6b6b;
+  color: #6b6b6b;
   margin-top: 0;
   margin-bottom: 60px;
   font-style: italic;
@@ -183,7 +182,6 @@ nav a:hover::after {
 .little-logo {
   width: 25px;
   height: 25px;
-  align-self: right;
 }
 
 .mission-subsection {
@@ -225,7 +223,6 @@ nav a:hover::after {
 #outil-planif {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  align-items: bottom;
   justify-content: center;
   padding: 20px;
   margin: auto auto;
@@ -253,7 +250,6 @@ nav a:hover::after {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: top;
   justify-content: center;
   width: 320px;
   height: 320px;

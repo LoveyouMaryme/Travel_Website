@@ -30,7 +30,7 @@ section {
   font-weight: 300;
   font-size: 24px;
   line-height: 10px;
-  color: f#6b6b6b;
+  color: #6b6b6b;
   margin-top: 0;
   font-style: italic;
   text-align: center;
@@ -117,7 +117,6 @@ nav a:hover::after {
   border-radius: 20px;
   display: inline-flex;
   width: 80%;
-  align-self: right;
   padding: 10px;
   justify-content: center;
   align-items: center;
