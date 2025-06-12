@@ -161,13 +161,14 @@ nav a:hover::after {
   border-bottom: #2e2e2e dotted 1px;
   padding: 20px 0;
   margin-top: 20px;
-  gap: 40px; 
+  gap: 40px;
 }
 
 .temoignage-image {
   width: 300px;
   height: auto;
-  border-radius: 10px; 
+  max-height: 300px;
+  border-radius: 10px;
 }
 
 .temoignage-description {
